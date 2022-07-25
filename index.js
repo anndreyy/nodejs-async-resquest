@@ -16,8 +16,6 @@ app.get('/async', (req, res) => {
         case 1:
             statusProcessing = 2;
             processA();
-            res.status(202).send('Processing');
-            break;
         case 2:
             res.status(202).send('Processing');
             break;
